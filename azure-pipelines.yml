@@ -13,7 +13,7 @@ steps:
 
 - script: |
     npm i
-    cd 
+    cd examples/mochawesome-flags
     npm i
     npm test
   displayName: 'Run a multi-line script'
