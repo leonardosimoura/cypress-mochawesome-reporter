@@ -21,3 +21,5 @@ steps:
 - task: PublishHtmlReport@1
   inputs:
     reportDir: 'examples/mochawesome-flags/test-report/index.html'
+
+
