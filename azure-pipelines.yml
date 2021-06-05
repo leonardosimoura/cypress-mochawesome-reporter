@@ -13,7 +13,11 @@ steps:
 
 - script: |
     npm i
-    cd examples/mochawesome-flags
+    cd 
     npm i
     npm test
   displayName: 'Run a multi-line script'
+
+- task: PublishHtmlReport@1
+  inputs:
+    reportDir: 'examples/mochawesome-flags/test-report/index.html'
