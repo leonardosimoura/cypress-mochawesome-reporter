@@ -22,13 +22,14 @@ steps:
   inputs:
     tabName: 'E2E Dev'
     reportDir: 'examples/mochawesome-flags/test-report/index.html'
-
+  condition: always()
 - task: GenericHtmlReport@1
   inputs:
     tabName: 'E2E QA'
     reportDir: 'examples/mochawesome-flags/test-report/index.html'
-
+  condition: always()
 - task: GenericHtmlReport@1
   inputs:
     tabName: 'E2E NonProd'
     reportDir: 'examples/mochawesome-flags/test-report/index.html'
+  condition: always()
